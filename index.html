@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RT Lynx Oy</title>
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7f4;
+    color: #2e3d2f;
+    line-height: 1.7;
+}
+
+section {
+    padding: 100px 12%;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2f4f3a;
+}
+
+p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: #6e8b6b;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #567a55;
+    transform: translateY(-3px);
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1505409859467-3a796fd5798e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(18, 42, 26, 0.75);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+/* ================= ABOUT ================= */
+
+.about {
+    background-color: #ffffff;
+}
+
+/* ================= SERVICES ================= */
+
+.services {
+    background-color: #eef3ec;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* ================= ADVANTAGES ================= */
+
+.advantages {
+    background-color: #ffffff;
+}
+
+/* ================= PROCESS ================= */
+
+.process {
+    background-color: #eef3ec;
+}
+
+/* ================= CONTACT FULL ================= */
+
+.contact-full {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e3ebe1;
+    min-height: 100vh;
+    gap: 60px;
+}
+
+.contact-text {
+    width: 50%;
+}
+
+.contact-image {
+    width: 45%;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* ================= FORM ================= */
+
+.form-section {
+    background-color: #ffffff;
+}
+
+form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #cbd5c5;
+    font-size: 16px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #243326;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 10%;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 900px) {
+
+    section {
+        padding: 80px 8%;
+    }
+
+    .contact-full {
+        flex-direction: column;
+    }
+
+    .contact-text,
+    .contact-image {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 1. HERO -->
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>RT Lynx Oy</h1>
+        <p>
+        Strateginen kumppani yrityksille ja sijoittajille Suomessa. 
+        Autamme optimoimaan liiketoimintarakenteet, vahvistamaan kannattavuutta sekä tunnistamaan vakaat ja tuottavat kiinteistökohteet. 
+        Rakennamme selkeän polun analyysistä toteutukseen.
+        </p>
+        <a href="#contact" class="btn">Yhteystiedot</a>
+    </div>
+</section>
+
+<!-- 2. ABOUT -->
+
+<section class="about">
+    <h2>Kestävä kasvu perustuu selkeään strategiaan</h2>
+    <p>
+    RT Lynx Oy on Tampereella toimiva konsultointiyritys, joka yhdistää liiketoiminnan kehittämisen ja kiinteistöalan asiantuntemuksen. 
+    Autamme yrityksiä parantamaan rakenteellista tehokkuutta, kassavirran hallintaa ja investointistrategiaa. 
+    Tunnistamme markkinariskit ennen päätöksiä ja rakennamme realistiset tuottoennusteet. 
+    Toimintamme perustuu läpinäkyvyyteen, mitattaviin tavoitteisiin ja pitkäjänteiseen yhteistyöhön. 
+    Emme tarjoa geneerisiä ratkaisuja – jokainen strategia rakennetaan asiakkaan tilanteen mukaan.
+    </p>
+</section>
+
+<!-- 3. SERVICES -->
+
+<section class="services">
+    <h2>Asiantuntijapalvelumme</h2>
+    <div class="grid-3">
+
+        <div class="card">
+            <h3>Liiketoimintakonsultointi</h3>
+            <p>
+            Suoritamme kokonaisvaltaisen analyysin yrityksen taloudesta, prosesseista ja kasvupotentiaalista. 
+            Tunnistamme tehottomuudet ja luomme selkeän kehityssuunnitelman. 
+            Tavoitteena on mitattava kannattavuuden parantaminen.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Kiinteistösijoittamisen neuvonta</h3>
+            <p>
+            Analysoimme alueelliset markkinat ja arvioimme kohteiden tuottopotentiaalin. 
+            Laadimme kassavirtalaskelmat ja riskiskenaariot ennen investointia. 
+            Tuemme neuvotteluissa ja päätöksenteossa.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Rakenteellinen optimointi</h3>
+            <p>
+            Arvioimme yritysrakenteen tehokkuuden verotuksen ja omistuksen näkökulmasta. 
+            Suunnittelemme kestävän rakenteen kasvua ja sijoittajayhteistyötä varten. 
+            Toteutamme muutokset hallitusti.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- 4. ADVANTAGES -->
+
+<section class="advantages">
+    <h2>Miksi RT Lynx Oy</h2>
+    <div class="grid-3">
+
+        <div>
+            <h3>Syvällinen markkinatuntemus</h3>
+            <p>Tunnemme Pirkanmaan liiketoiminta- ja kiinteistöympäristön yksityiskohtaisesti.</p>
+        </div>
+
+        <div>
+            <h3>Dataohjattu lähestymistapa</h3>
+            <p>Päätökset perustuvat realistisiin talouslaskelmiin ja riskianalyysiin.</p>
+        </div>
+
+        <div>
+            <h3>Pitkäaikainen kumppanuus</h3>
+            <p>Sitoudumme asiakkaidemme kasvuun ja seuraamme tuloksia systemaattisesti.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- 5. PROCESS -->
+
+<section class="process">
+    <h2>Yhteistyömallimme</h2>
+    <div class="grid-3">
+
+        <div>
+            <h3>1. Nykytilan kartoitus</h3>
+            <p>Analysoimme taloudellisen tilanteen ja määrittelemme selkeät tavoitteet.</p>
+        </div>
+
+        <div>
+            <h3>2. Strateginen suunnittelu</h3>
+            <p>Rakennamme konkreettisen toimenpidesuunnitelman aikatauluineen.</p>
+        </div>
+
+        <div>
+            <h3>3. Toteutus & seuranta</h3>
+            <p>Tuemme käyttöönotossa ja mittaamme tulokset jatkuvasti.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- 6. CONTACT FULL -->
+
+<section class="contact-full" id="contact">
+
+    <div class="contact-text">
+        <h2>Rakennetaan seuraava askel yhdessä</h2>
+        <p>
+        Ota yhteyttä ja keskustellaan tavoitteistasi luottamuksellisesti. 
+        Vastaamme nopeasti ja kartoitamme tilanteesi ilman sitoumuksia. 
+        Yhdessä löydämme kestävän ja kannattavan ratkaisun.
+        </p>
+
+        <p>
+        <strong>Sähköposti:</strong> info@rtlynx.pro<br>
+        <strong>Osoite:</strong> Satakunnankatu 28A 6, 33210 Tampere
+        </p>
+    </div>
+
+    <div class="contact-image">
+        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174" alt="Office meeting">
+    </div>
+
+</section>
+
+<!-- 7. FORM -->
+
+<section class="form-section">
+    <h2>Lähetä viesti</h2>
+    <p>Täytä lomake ja palaamme sinulle mahdollisimman pian.</p>
+
+    <form>
+        <input type="text" placeholder="Nimi" required>
+        <input type="email" placeholder="Sähköposti" required>
+        <textarea rows="5" placeholder="Viesti"></textarea>
+        <button type="submit" class="btn">Lähetä</button>
+    </form>
+</section>
+
+<!-- 8. FOOTER -->
+
+<footer>
+    © 2026 RT Lynx Oy | Business & Real Estate Consulting | Tampere, Suomi
+</footer>
+
+</body>
+</html>
